@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else
                 iv1.setImageResource(R.drawable.x);
+                Toast.makeText(this, "incorrect sum,next time use calculator", Toast.LENGTH_SHORT).show();
 
             tv3.setVisibility(View.VISIBLE);
             tv4.setVisibility(View.VISIBLE);
@@ -109,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
             }
             else
                 iv2.setImageResource(R.drawable.x);
+                Toast.makeText(this, "incorrect sum,next time use calculator", Toast.LENGTH_SHORT).show();
+
 
             tv5.setVisibility(View.VISIBLE);
             tv6.setVisibility(View.VISIBLE);
@@ -133,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else
                 iv3.setImageResource(R.drawable.x);
+                Toast.makeText(this, "incorrect sum,next time use calculator", Toast.LENGTH_SHORT).show();
             Toast.makeText(this, round(counter * 33.333 )+"% ," + counter + "/3", Toast.LENGTH_SHORT).show();
             bigbtn.setVisibility(View.VISIBLE);
         }
