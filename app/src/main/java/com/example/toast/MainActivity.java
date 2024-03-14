@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Random;
 
 import java.util.Random;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Boolean clickedEtn1 = false;
     Boolean clickedEtn2 = false;
     Boolean clickedEtn3 = false;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
             btn2.setVisibility(View.VISIBLE);
             tv3.setText("" + (rand1 + rand2));
         }
+        else if(str1.isEmpty())
+            Toast.makeText(this, "IM ALWAYS ONE STEP AHEAD", Toast.LENGTH_SHORT).show();
     }
     public void clickedEtn2(View view) {clickedEtn2 = true;}
     public void clickedBtn2(View view) {
@@ -111,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
             btn3.setVisibility(View.VISIBLE);
             tv5.setText("" + (rand3 + rand1 + rand2));
         }
+        else if(str2.isEmpty())
+            Toast.makeText(this, "IM ALWAYS ONE STEP AHEAD", Toast.LENGTH_SHORT).show();
     }
     public void clickedEtn3(View view) {clickedEtn3 = true;}
 
@@ -126,9 +133,11 @@ public class MainActivity extends AppCompatActivity {
             }
             else
                 iv3.setImageResource(R.drawable.x);
-            bigbtn.setText(round(counter * 33.333 )+"% ," + counter + "/3");
+            Toast.makeText(this, round(counter * 33.333 )+"% ," + counter + "/3", Toast.LENGTH_SHORT).show();
+            bigbtn.setVisibility(View.VISIBLE);
         }
-        bigbtn.setVisibility(View.VISIBLE);
+        else if(str3.isEmpty())
+            Toast.makeText(this, "IM ALWAYS ONE STEP AHEAD", Toast.LENGTH_SHORT).show();
     }
     public void clickedBigbtn(View view) {
         etn1.setText("");
@@ -150,8 +159,6 @@ public class MainActivity extends AppCompatActivity {
         rand2 = rnd.nextInt(90)+10;
         tv1.setText(" "+rand1);
         tv2.setText(" "+rand2);
-        bigbtn.setText(" "+rand2);
         counter = 0;
     }
-
 }
