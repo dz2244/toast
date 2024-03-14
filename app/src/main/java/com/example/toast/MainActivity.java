@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             tv3.setText("" + (rand1 + rand2));
         }
         else if(str1.isEmpty())
-            Toast.makeText(this, "IM ALWAYS ONE STEP AHEAD", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "you must enter a number!", Toast.LENGTH_SHORT).show();
     }
     public void clickedEtn2(View view) {clickedEtn2 = true;}
     public void clickedBtn2(View view) {
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             tv5.setText("" + (rand3 + rand1 + rand2));
         }
         else if(str2.isEmpty())
-            Toast.makeText(this, "IM ALWAYS ONE STEP AHEAD", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "you must enter a number!", Toast.LENGTH_SHORT).show();
     }
     public void clickedEtn3(View view) {clickedEtn3 = true;}
 
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
             bigbtn.setVisibility(View.VISIBLE);
         }
         else if(str3.isEmpty())
-            Toast.makeText(this, "IM ALWAYS ONE STEP AHEAD", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "you must enter a number!", Toast.LENGTH_SHORT).show();
     }
     public void clickedBigbtn(View view) {
         etn1.setText("");
