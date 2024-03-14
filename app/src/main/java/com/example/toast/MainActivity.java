@@ -112,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
                 iv2.setImageResource(R.drawable.x);
                 Toast.makeText(this, "incorrect sum,next time use calculator", Toast.LENGTH_SHORT).show();
 
-
             tv5.setVisibility(View.VISIBLE);
             tv6.setVisibility(View.VISIBLE);
             etn3.setVisibility(View.VISIBLE);
